@@ -24,6 +24,102 @@
     }
 }
 
+.swiper {
+    width: 440px;
+    height: 450px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    background-color: rgba(194, 241, 255, 0.699);
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background-color: rgba(194, 241, 255, 0.699);
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background-color:  rgba(194, 241, 255, 0.699);
+  }
+
+  .swiper-slide:nth-child(4n) {
+    background-color: rgba(194, 241, 255, 0.699);
+  }
+
+  .swiper-slide:nth-child(5n) {
+    background-color: rgba(194, 241, 255, 0.699);
+  }
+
+  .swiper-slide:nth-child(6n) {
+    background-color:  rgba(194, 241, 255, 0.699);
+  }
+
+  .swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+  }
+
+  .swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+  }
+
+  .swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+  }
+
+  .swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  }
+
+/* From Uiverse.io by talhabangyal */ 
+.hamburger {
+    cursor: pointer;
+  }
+  
+  .hamburger input {
+    display: none;
+  }
+  
+  .hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition:
+      stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  
+  .hamburger input:checked + svg {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+  
 
 .brand-logo {
     width: 300px; /* Atur lebar logo */
@@ -221,6 +317,17 @@ button{
 }
 .navbar{
     padding: 56px 0 80px 0;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.11);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.214);
+    z-index: 50;
+}
+
+.d-flex {
+    display: flex;
 }
 .brand-and-toggler{
     width: 100%;
@@ -300,6 +407,7 @@ button{
     align-items: center;
     flex-wrap: wrap; /* Untuk responsif */
     gap: 20px; /* Jarak antar elemen */
+    height: 100vh;
 }
 
 .banner-left {
@@ -642,7 +750,12 @@ button{
     row-gap: 40px;
 }
 .footer-item:nth-child(1){
+    /* width: 200px; */
     padding-right: 100px;
+}
+.footer-item:nth-child(2){
+    width: 200px;
+    /* padding-right: 100px; */
 }
 .footer-item:nth-child(1) p{
     font-weight: 300;
@@ -710,7 +823,7 @@ button{
         top: 0;
         width: 280px;
         height: 100%;
-        box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+        box-shadow: rgba(95, 101, 109, 0.4) 0px 8px 24px;
         z-index: 999;
         background-color: var(--clr-white);
         padding: 48px 32px 24px;
